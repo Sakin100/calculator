@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000; /* Black background */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    background-color: #1a1a1a; /* Dark background for calculator */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    width: 320px; /* Fixed width for the calculator */
+}
+
+.display {
+    background-color: #000; /* Black display */
+    color: #00ffcc; /* Bright color for display text */
+    font-size: 2.5rem; /* Increase font size for better visibility */
+    padding: 20px;
+    border: 1px solid #00ffcc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: right;
+    min-height: 70px; /* Minimum height for the display */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Spacing between buttons */
+}
+
+.button {
+    background-color: #333; /* Dark button background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 20px; /* Uniform padding for buttons */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.operator {
+    background-color: #00ccff; /* Different color for operator buttons */
+}
+
+.zero {
+    grid-column: span 2; /* Make the zero button span two columns */
+}
+
+.button:hover {
+    background-color: #444; /* Button hover effect */
+}
+
+.name {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #fff; /* White color for name */
+}
